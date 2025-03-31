@@ -23,6 +23,13 @@ header{
   padding: 20px;
 }
 
+.container{
+  min-width: 400px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
 .user{
   display: flex;
   align-items: center;
@@ -46,3 +53,43 @@ header{
   font-size: 1.5rem;
 }
 
+.btn-login{
+  padding: 8px 16px;
+  border-radius: 12px;
+  background-color: black;
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.menu{
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-menu{
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.user-responsivo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .user, .desktop-login{
+    display: none;
+  }
+
+  .menu{
+    display: block;
+  }
+}

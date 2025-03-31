@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="container">
         <section class="user">
             <img class="user-img" src="../icons/foto1.png" alt="">
             <div class="user-info">
@@ -18,9 +18,24 @@
         </section>
 
         <h1 class="title">Resgate3G</h1>
-        <button class="btn-login" type="button">Login</button>
+        <button class="btn-login desktop-login" type="button">Login</button>
+        <button id="btn-menu" class="menu" aria-label="Abrir menu">
+            <img src="../icons/menu.svg" alt="icon de menu">
+        </button>
     </header>
+
+    <nav id="nav-menu" class="nav-menu">
+        <section class="user-responsivo">
+            <img class="user-img" src="../icons/foto1.png" alt="">
+            <div class="user-info">
+                <h3>@pablo_ryu</h3>
+                <p>Estudante</p>
+            </div>     
+        </section>
+
+        <button class="btn-login mobile-login" type="button">Login</button>
+    </nav>
     
-    <script src="../css/style.css"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
